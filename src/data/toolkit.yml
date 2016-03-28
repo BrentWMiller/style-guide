@@ -1,0 +1,7 @@
+colors:
+  brand:
+    Primary / Success: "#27ae60"
+    Secondary: "#161616"
+    Info: "#21bef7"
+    Warning: "#f6c941"
+    Danger: "#cd1f1d"
