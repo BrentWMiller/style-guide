@@ -1,0 +1,76 @@
+.btn {
+    padding: $button-height $button-width;
+    background-color: $button-bg;
+    border-radius: $button-border-radius;
+    border: $button-border-size solid $gray-lighter;
+    outline: none;
+    transition: all $animation-duration ease;
+    &:hover { border-color: $brand-default; }
+    &:active { @include drop-shadow($level: 2); }
+    
+    &.flat {
+        box-shadow: none;
+        border-color: transparent;
+        &:hover {
+            background-color: mix($brand-default, $mix-white, 15%);
+            border-color: mix($brand-default, $mix-white, 15%);
+        }
+        &:active { background-color: mix($brand-default, $mix-white, 30%); }
+    }
+    &.solid {
+        background-color: $brand-default;
+        color: $text-color-inverted;
+        border-color: $brand-default;
+        &:hover {
+            background-color: mix($brand-default, $mix-white, 85%);
+            border-color: mix($brand-default, $mix-white, 85%);
+        }
+        &:active { @include drop-shadow(2); }
+    }
+    &.glow {
+        border-color: transparent;
+        @include color-glow($brand-default);
+        &:hover { border-color: $button-bg; }
+    }
+}
+
+.btn .material-icons {
+    margin-top: $icon-top-margin;
+    font-size: $icon-size;
+    vertical-align: top;
+}
+
+// Button Types
+
+.btn {
+    &-primary, &-success {
+        @include button-creator($brand-primary);
+        &.flat { @include button-flat($brand-primary); }
+        &.solid { @include button-solid($brand-primary); }
+        &.glow { @include color-glow($brand-primary); }
+    };
+    &-success {
+        @include button-creator($brand-success);
+        &.flat { @include button-flat($brand-success); }
+        &.solid { @include button-solid($brand-success); }
+        &.glow { @include color-glow($brand-success); }
+    };
+    &-info {
+        @include button-creator($brand-info);
+        &.flat { @include button-flat($brand-info); }
+        &.solid { @include button-solid($brand-info); }
+        &.glow { @include color-glow($brand-info); }
+    };
+    &-warning {
+        @include button-creator($brand-warning);
+        &.flat { @include button-flat($brand-warning); }
+        &.solid { @include button-solid($brand-warning); }
+        &.glow { @include color-glow($brand-warning); }
+    };
+    &-danger {
+        @include button-creator($brand-danger);
+        &.flat { @include button-flat($brand-danger); }
+        &.solid { @include button-solid($brand-danger); }
+        &.glow { @include color-glow($brand-danger); }
+    };
+}

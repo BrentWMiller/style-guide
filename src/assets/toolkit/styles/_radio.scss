@@ -1,0 +1,26 @@
+input[type="radio"] {
+    display: none;
+}
+
+.radio {
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="radio"] + label:before {
+    position: relative;
+    top: $icon-top-margin;
+    font-family: 'Material Icons';
+    content: 'radio_button_unchecked';
+    font-size: ($font-size + .25em);
+    vertical-align: top;
+}
+
+input[type="radio"]:checked + label:before {
+    position: relative;
+    top: $icon-top-margin;
+    font-family: 'Material Icons';
+    content: 'radio_button_checked';
+    font-size: ($font-size + .25em);
+    vertical-align: top;
+}

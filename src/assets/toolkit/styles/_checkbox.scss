@@ -1,0 +1,32 @@
+input[type="checkbox"] {
+    display: none;
+}
+
+.checkbox {
+    cursor: pointer;
+    user-select: none;
+}
+
+input[type="checkbox"] + label:before {
+    position: relative;
+    top: $icon-top-margin;
+    font-family: 'Material Icons';
+    content: 'check_box_outline_blank';
+    font-size: ($font-size + .25em);
+    vertical-align: top;
+}
+
+input[type="checkbox"]:checked + label:before {
+    position: relative;
+    top: $icon-top-margin;
+    font-family: 'Material Icons';
+    content: 'check_box';
+    font-size: ($font-size + .25em);
+    vertical-align: top;
+}
+
+.checkbox {
+    input[type="checkbox"] + label:before {
+        color: $brand-info;
+    }
+}

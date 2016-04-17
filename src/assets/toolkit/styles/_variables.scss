@@ -1,0 +1,59 @@
+// Brand Colors
+$brand-default:   #121f33;
+$brand-primary:   #5689ee;
+$brand-success:   #30bb98;
+$brand-info:      #4451aa;
+$brand-warning:   #f2db77;
+$brand-danger:    #e85b5b;
+
+// Content colors
+$content-bg: #ffffff;
+$content-bg-seconday: #ededed;
+
+$text-color:           #161616;
+$text-color-secondary: #585757;
+$text-color-inverted:    #fff;
+
+// Black & Whites
+$mix-white: #fff;
+$mix-black: #000;
+
+$gray: #9E9E9E;
+$gray-lighter:  mix($gray, $mix-white, 15%);
+$gray-light:    mix($gray, $mix-white, 30%);
+$gray-dark:     mix($gray, $mix-black, 30%);
+$gray-darker:   mix($gray, $mix-black, 15%);
+
+// Typography
+$font-size: 1em;
+
+$Roboto: 'Roboto', sans-serif;
+
+$thin:        100;
+$light:       300;
+$normal:      400;
+$medium:      500;
+$bold:        700;
+$ultra-bold:  900;
+
+// Icons
+$icon-size: ($font-size + .25em);
+$icon-top-margin: .05em;
+
+// Default Margins and Padding
+$margin-height: .25em;
+$margin-width:  .5em;
+
+$padding-height: .25em;
+$padding-width:  .5em;
+
+// Button Defaults
+$button-bg: #fff;
+
+$button-height: .5em;
+$button-width: 1em;
+$button-border-radius: .2em;
+$button-border-size: .1em;
+
+// Animation
+$animation-duration: 0.25s;

@@ -1,4 +1,7 @@
 @import "variables";
-@import "mixins";
+@import "mixins/mixins";
 
+@import "button";
+@import "checkbox";
+@import "radio";
 @import "typography";

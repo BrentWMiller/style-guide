@@ -1,7 +1,8 @@
 colors:
   brand:
-    Primary / Success: "#27ae60"
-    Secondary: "#161616"
-    Info: "#21bef7"
-    Warning: "#f6c941"
-    Danger: "#cd1f1d"
+    Default: "#121f33"
+    Primary: "#5689ee"
+    Success: "#30bb98"
+    Info: "#4451aa"
+    Warning: "#f2db77"
+    Danger: "#e85b5b"
