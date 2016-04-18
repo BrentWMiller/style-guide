@@ -5,8 +5,11 @@
     border: $button-border-size solid $gray-lighter;
     outline: none;
     transition: all $animation-duration ease;
+    margin: $button-margin;
     &:hover { border-color: $brand-default; }
     &:active { @include drop-shadow($level: 2); }
+    
+    // Button Types
     
     &.flat {
         box-shadow: none;
@@ -32,6 +35,19 @@
         @include color-glow($brand-default);
         &:hover { border-color: $button-bg; }
     }
+    &:disabled {
+        cursor: not-allowed;
+        color: $gray;
+        background-color: $gray-lighter;
+        border-color: $gray-light;
+        box-shadow: none;
+        &:hover {
+            color: $gray;
+            background-color: $gray-lighter;
+            border-color: $gray-light;
+            box-shadow: none;
+        }
+    }
 }
 
 .btn .material-icons {
@@ -40,10 +56,10 @@
     vertical-align: top;
 }
 
-// Button Types
+// Button Color Types
 
 .btn {
-    &-primary, &-success {
+    &-primary {
         @include button-creator($brand-primary);
         &.flat { @include button-flat($brand-primary); }
         &.solid { @include button-solid($brand-primary); }

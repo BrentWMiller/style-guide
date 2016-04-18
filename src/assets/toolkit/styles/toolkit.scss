@@ -1,7 +1,9 @@
-@import "variables";
-@import "mixins/mixins";
+@import "partials/variables";
+@import "partials/mixins/mixins";
+@import "partials/animations/animations.scss";
 
-@import "button";
-@import "checkbox";
-@import "radio";
-@import "typography";
+@import "partials/button";
+@import "partials/checkbox";
+@import "partials/field";
+@import "partials/radio";
+@import "partials/typography";

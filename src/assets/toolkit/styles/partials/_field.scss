@@ -1,0 +1,29 @@
+.field {
+    position: relative;
+    margin-top: $input-label-margin;
+    .field-label {
+        font-size: $input-label-size;
+    }
+    .field-input {
+        outline: none;
+        width: 100%;
+        border: none;
+        border-bottom: $input-border-size solid $gray-light;
+        padding: .5em 0;
+        transition: all $animation-duration ease;
+        &:active, &:focus { border-color: $brand-default; }
+        &:disabled {
+            cursor: not-allowed;
+            background-color: $gray-lighter;
+            border-color: $gray-lighter;
+        }
+    }
+}
+
+// Field Color Types
+
+.field-primary { @include field-type($brand-primary); }
+.field-success { @include field-type($brand-success); }
+.field-info { @include field-type($brand-info); }
+.field-warning { @include field-type($brand-warning); }
+.field-danger { @include field-type($brand-danger); }

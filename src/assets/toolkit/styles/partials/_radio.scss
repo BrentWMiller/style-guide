@@ -14,6 +14,7 @@ input[type="radio"] + label:before {
     content: 'radio_button_unchecked';
     font-size: ($font-size + .25em);
     vertical-align: top;
+    color: $brand-default;
 }
 
 input[type="radio"]:checked + label:before {
@@ -24,3 +25,11 @@ input[type="radio"]:checked + label:before {
     font-size: ($font-size + .25em);
     vertical-align: top;
 }
+
+// Radio Color Types
+
+.radio-primary .radio-label:before { color: $brand-primary; }
+.radio-success .radio-label:before { color: $brand-success; }
+.radio-info .radio-label:before { color: $brand-info; }
+.radio-warning .radio-label:before { color: $brand-warning; }
+.radio-danger .radio-label:before { color: $brand-danger; }

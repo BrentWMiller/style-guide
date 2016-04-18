@@ -14,6 +14,7 @@ input[type="checkbox"] + label:before {
     content: 'check_box_outline_blank';
     font-size: ($font-size + .25em);
     vertical-align: top;
+    color: $brand-default;
 }
 
 input[type="checkbox"]:checked + label:before {
@@ -25,8 +26,10 @@ input[type="checkbox"]:checked + label:before {
     vertical-align: top;
 }
 
-.checkbox {
-    input[type="checkbox"] + label:before {
-        color: $brand-info;
-    }
-}
+// Checkbox Color Types
+
+.checkbox-primary .checkbox-label:before { color: $brand-primary; }
+.checkbox-success .checkbox-label:before { color: $brand-success; }
+.checkbox-info .checkbox-label:before { color: $brand-info; }
+.checkbox-warning .checkbox-label:before { color: $brand-warning; }
+.checkbox-danger .checkbox-label:before { color: $brand-danger; }

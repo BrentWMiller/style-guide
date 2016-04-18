@@ -1,0 +1,36 @@
+body {
+  font-family: $Roboto;
+  font-size: $font-size;
+}
+
+h1 {
+  font-weight: $ultra-bold;
+  font-size: ($font-size * 2.5);
+}
+
+h2 {
+  font-weight: $medium;
+  font-size: ($font-size * 1.5);
+  color: $text-color-secondary;
+}
+h3 { font-weight: $bold; }
+h4 { color: $text-color-secondary; }
+
+p { line-height: 1.85em; }
+
+// Highlight Colors
+
+.highlight { background-color: mix($brand-default, $mix-white, 25%); }
+.highlight-primary { @include highlight-type($brand-primary); }
+.highlight-success { @include highlight-type($brand-success); }
+.highlight-info { @include highlight-type($brand-info); }
+.highlight-warning { @include highlight-type($brand-warning); }
+.highlight-danger { @include highlight-type($brand-danger); }
+
+// Text Colors
+
+.color-primary { color: $brand-primary; }
+.color-success { color: $brand-success; }
+.color-info { color: $brand-info; }
+.color-warning { color: $brand-warning; }
+.color-danger { color: $brand-danger; }
