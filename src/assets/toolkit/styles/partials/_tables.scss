@@ -1,0 +1,31 @@
+.table {
+    border-collapse: collapse;
+    width: 100%;
+    thead, tfoot {
+        color: $brand-default;
+        text-align: left;
+    }
+    thead th { padding-bottom: $table-padding * 2;}
+    tfoot th { padding-top: $table-padding * 2;}
+    td, th { padding: $table-padding; }
+    th {
+        font-size: ($font-size - .15em);
+        font-weight: $bold;
+        text-transform: uppercase;
+    }
+    tbody tr:nth-child(odd) {
+        background-color: mix($brand-primary, $mix-white, 10%);
+    }
+}
+
+.table.hoverable tbody {
+    cursor: pointer;
+    tr:hover {
+        transition: $animation-duration all ease;
+        background-color: mix($brand-primary, $mix-white, 20%);
+    }
+    tr:active {
+        transition: $animation-duration all ease;
+        background-color: mix($brand-primary, $mix-white, 50%);
+    }
+}
