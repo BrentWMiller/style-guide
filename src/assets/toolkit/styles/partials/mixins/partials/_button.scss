@@ -1,19 +1,19 @@
 @mixin button-creator($color) {
     color: $color;
-    &:hover { border-color: $color; }
+    &:hover, &:focus { border-color: $color; }
 }
 
 @mixin color-glow($glow-color) {
     box-shadow: 0 0 20px rgba( $glow-color, .1),
                 0 3px 24px rgba( $glow-color, .2);
-    &:hover { box-shadow: 0 0 20px rgba( $glow-color, .2),
+    &:hover, &:focus { box-shadow: 0 0 20px rgba( $glow-color, .2),
                           0 3px 24px rgba( $glow-color, .3); }
     &:active { box-shadow: 0 0 20px rgba( $glow-color, .3),
                            0 3px 24px rgba( $glow-color, .4); }
 }
 
 @mixin button-flat($color) {
-    &:hover {
+    &:hover, &:focus {
         background-color: mix($color, $mix-white, 15%);
         border-color: mix($color, $mix-white, 15%);
     }
@@ -23,7 +23,7 @@
 @mixin button-solid($color) {
     background-color: $color;
     border-color: $color;
-    &:hover {
+    &:hover, &:focus {
         background-color: mix($color, $mix-white, 85%);
         border-color: mix($color, $mix-white, 85%);
     }
