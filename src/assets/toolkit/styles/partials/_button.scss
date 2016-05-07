@@ -13,10 +13,11 @@
     
     &.flat {
         box-shadow: none;
+        background-color: transparent;
         border-color: transparent;
         &:hover, &:focus {
             background-color: mix($brand-default, $mix-white, 15%);
-            border-color: mix($brand-default, $mix-white, 15%);
+            border-color: transparent;
         }
         &:active { background-color: mix($brand-default, $mix-white, 30%); }
     }

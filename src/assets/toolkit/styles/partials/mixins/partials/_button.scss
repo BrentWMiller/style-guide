@@ -15,7 +15,6 @@
 @mixin button-flat($color) {
     &:hover, &:focus {
         background-color: mix($color, $mix-white, 15%);
-        border-color: mix($color, $mix-white, 15%);
     }
     &:active { background-color: mix($color, $mix-white, 30%); }
 }
