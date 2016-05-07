@@ -6,7 +6,7 @@
     outline: none;
     transition: all $animation-duration ease;
     margin: $button-margin;
-    &:hover { border-color: $brand-default; }
+    &:hover, &:focus { border-color: $brand-default; }
     &:active { @include drop-shadow($level: 2); }
     
     // Button Types
@@ -14,7 +14,7 @@
     &.flat {
         box-shadow: none;
         border-color: transparent;
-        &:hover {
+        &:hover, &:focus {
             background-color: mix($brand-default, $mix-white, 15%);
             border-color: mix($brand-default, $mix-white, 15%);
         }
@@ -24,7 +24,7 @@
         background-color: $brand-default;
         color: $text-color-inverted;
         border-color: $brand-default;
-        &:hover {
+        &:hover, &:focus {
             background-color: mix($brand-default, $mix-white, 85%);
             border-color: mix($brand-default, $mix-white, 85%);
         }
@@ -33,7 +33,7 @@
     &.glow {
         border-color: transparent;
         @include color-glow($brand-default);
-        &:hover { border-color: $button-bg; }
+        &:hover, &:focus { border-color: $button-bg; }
     }
     &:disabled {
         cursor: not-allowed;
@@ -41,7 +41,7 @@
         background-color: $gray-lighter;
         border-color: $gray-light;
         box-shadow: none;
-        &:hover {
+        &:hover, &:focus {
             color: $gray;
             background-color: $gray-lighter;
             border-color: $gray-light;
