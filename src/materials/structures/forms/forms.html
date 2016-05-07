@@ -1,0 +1,21 @@
+<form>
+    <div class="row">
+        <div class="col-sm-6 col-xs-12">
+            <div class="box">{{> partials.text-field label='First Name'}}</div>
+        </div>
+        <div class="col-sm-6 col-xs-12">
+            <div class="box">{{> partials.text-field label='Last Name'}}</div>
+        </div>
+        <div class="col-xs-12">
+            <div class="box">{{> partials.textarea label='Comments'}}</div>
+        </div>
+    </div>
+    <div class="row end-xs">
+        <div class="col-xs-6">
+            <div class="box">
+                {{> partials.button type='danger' icon='clear' text='Clear'}}
+                {{> partials.button type='primary solid' icon='send' text='Submit'}}
+            </div>
+        </div>
+    </div>
+</form>
