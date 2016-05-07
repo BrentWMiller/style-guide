@@ -41,6 +41,8 @@ $ultra-bold:  900;
 $border-radius: .2em;
 $border-size:   .1em;
 
+$container-padding: .5em;
+
 // Icons
 $icon-size: ($font-size + .25em);
 $icon-top-margin: .05em;
@@ -58,7 +60,9 @@ $button-margin:         .15em;
 $table-padding: 1em;
 $table-margin:  1em;
 
-// Input Defaults
+// Form Defaults
+
+$form-padding: $container-padding;
 
 $input-label-margin: .65em;
 $input-label-size:   ($font-size - .075em);
