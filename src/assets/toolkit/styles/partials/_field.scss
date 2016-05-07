@@ -1,8 +1,11 @@
 .field {
     position: relative;
-    margin-top: $input-label-margin;
+    margin-top: ($input-label-margin + 1em);
     .field-label {
+        color: $gray;
         font-size: $input-label-size;
+        position: absolute;
+        top: $input-label-margin;
     }
     .field-input {
         outline: none;
@@ -27,3 +30,13 @@
 .field-info { @include field-type($brand-info); }
 .field-warning { @include field-type($brand-warning); }
 .field-danger { @include field-type($brand-danger); }
+
+// Sliding Labels
+
+input:valid + .field-label,
+input:focus + .field-label,
+textarea:valid + .field-label,
+textarea:focus + .field-label {
+    transition: $animation-duration all ease;
+    top: -1em;
+}
