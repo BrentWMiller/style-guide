@@ -1,0 +1,19 @@
+.alert{
+    color: $text-color-inverted;
+    width: 100%;
+    background-color: $brand-default;
+    padding: $container-padding;
+    margin: $container-margin 0;
+}
+
+.alert .material-icons {
+    margin-top: $icon-top-margin;
+    font-size: $icon-size;
+    vertical-align: top;
+}
+
+.alert-primary { @include alert-creator($brand-primary); }
+.alert-success { @include alert-creator($brand-success); }
+.alert-info { @include alert-creator($brand-info); }
+.alert-warning { @include alert-creator($brand-warning); }
+.alert-danger { @include alert-creator($brand-danger); }
