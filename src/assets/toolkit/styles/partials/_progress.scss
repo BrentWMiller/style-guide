@@ -1,0 +1,73 @@
+// Barcharts
+.barchart {
+    position: relative;
+    background-color: $gray-lighter;
+    margin: ($container-margin * 2) 0;
+}
+
+.barchart-bar:before {
+    content: attr(data-percent);
+    right: 1em;
+}
+
+.barchart-description, .barchart-bar:before {
+    position: absolute;
+    top: -2em;
+    font-size: ($font-size - .3em);
+    text-transform: uppercase;
+    font-weight: $medium;
+}
+
+.barchart-progress {
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: $brand-default;
+    text-align: right;
+}
+
+.barchart, .barchart-progress {
+    padding: $container-padding 0;
+    border-radius: 2em;
+}
+
+.barchart-primary .barchart-progress { background-color: $brand-primary; }
+.barchart-success .barchart-progress { background-color: $brand-success; }
+.barchart-info .barchart-progress { background-color: $brand-info; }
+.barchart-warning .barchart-progress { background-color: $brand-warning; }
+.barchart-danger .barchart-progress { background-color: $brand-danger; }
+
+// Piecharts
+.piechart {
+    margin: $container-margin 0;
+    position: relative;
+    background-color: $gray-lighter;
+    fill: $brand-default;
+    svg { overflow: visible; }
+}
+
+.piechart-overlay {
+    background-color: $content-bg;
+    width: 95%;
+    height: 95%;
+}
+
+.piechart-description {
+    font-size: 2em;
+    font-weight: $bold;
+}
+
+.piechart, .piechart-overlay { border-radius: 100%; }
+
+.piechart-description, .piechart-overlay {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.piechart-primary { fill: $brand-primary; }
+.piechart-success { fill: $brand-success; }
+.piechart-info { fill: $brand-info; }
+.piechart-warning { fill: $brand-warning; }
+.piechart-danger { fill: $brand-danger; }
