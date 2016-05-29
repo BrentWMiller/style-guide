@@ -1,0 +1,30 @@
+.card.basic {
+    position: relative;
+    border: $border-size solid $gray-lighter;
+    border-radius: $border-radius;
+    background-color: $content-bg;
+    margin: ($container-margin / 2) 0;
+    .card-media { padding: $container-padding; }
+    .card-title, .card-subtitle, .card-body, .card-footer {
+        padding: $container-padding ($container-padding * 4);
+    }
+    .card-subtitle {
+        padding-top: 0;
+        padding-bottom: 0;
+    }
+    .card-footer {
+        color: $gray;
+    }
+}
+
+.card-media .card-top-right {
+    position: absolute;
+    top: 1em;
+    right: 1em;
+}
+
+.card-title h1 { margin: 0; }
+.card-subtitle h2 {
+    margin: 0;
+    color: $gray;
+}
