@@ -1,0 +1,14 @@
+.label {
+    background-color: $brand-default;
+    color: $text-color-inverted;
+    border-radius: $border-radius;
+    font-size: ($font-size - 0.25);
+    padding: ($container-padding - 0.25);
+}
+
+// Color types
+.label-primary { background-color: $brand-primary; }
+.label-success { background-color: $brand-success; }
+.label-info { background-color: $brand-info; }
+.label-warning { background-color: $brand-warning; }
+.label-danger { background-color: $brand-danger; }
