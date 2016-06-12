@@ -1,12 +1,18 @@
 .table {
     border-collapse: collapse;
     width: 100%;
+    background-color: $content-bg;
     thead, tfoot {
         color: $brand-default;
         text-align: left;
     }
-    thead th { padding-bottom: $table-padding * 2;}
-    tfoot th { padding-top: $table-padding * 2;}
+    tbody { border: $border-size solid $gray-lighter; }
+    thead th, tfoot th {
+        padding: $table-padding;
+        color: $gray-light;
+        transition: ($animation-duration / 2) all ease;
+        &:hover { color: $gray; }
+    }
     td, th { padding: $table-padding; }
     th {
         font-size: ($font-size - .15em);
@@ -15,20 +21,18 @@
     }
 }
 
-.table.striped tbody {
-    tr:nth-child(odd) {
-        background-color: mix($brand-primary, $mix-white, 10%);
+.table-alternate tbody {
+    tr:nth-child(even) {
+        background-color: mix($brand-default, $mix-white, 5%);
     }
 }
 
-.table.hoverable tbody {
+.table-active tbody {
     cursor: pointer;
-    tr:hover {
-        transition: $animation-duration all ease;
-        background-color: mix($brand-primary, $mix-white, 20%);
+    tr:hover, tr:active {
+        transition: ($animation-duration / 2) all ease;
+        color: $text-color-inverted;
     }
-    tr:active {
-        transition: $animation-duration all ease;
-        background-color: mix($brand-primary, $mix-white, 50%);
-    }
+    tr:hover { background-color: $brand-primary; }
+    tr:active { background-color: mix($brand-primary, $mix-white, 80%); }
 }
