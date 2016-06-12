@@ -15,7 +15,6 @@
     }
     .comparison-graph {
         background-color: transparentize($gray-lighter, .5);
-        stroke: $brand-primary;
         max-height: 10em;
         overflow: hidden;
         svg { max-height: 10em }
