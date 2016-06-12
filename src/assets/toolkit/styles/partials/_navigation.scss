@@ -15,6 +15,9 @@
     text-decoration: none;
     padding: $container-padding;
     padding-right: ($container-padding * 4);
+    &:hover {
+        color: $text-color-inverted;
+    }
 }
 
 .nav-item {
