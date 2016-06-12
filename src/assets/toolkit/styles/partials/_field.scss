@@ -1,18 +1,19 @@
 .field {
     position: relative;
-    margin: ($input-label-margin + .5em) 0;
-    .field-label {
-        color: $gray;
-        font-size: $input-label-size;
+    margin: ($input-margin + .75em) 0;
+    .field-label, .field-hint {
         position: absolute;
+        font-size: $input-label-size;
         top: $input-label-margin;
+        color: $gray;
     }
     .field-input {
-        outline: none;
         width: 100%;
-        border: none;
-        border-bottom: $input-border-size solid $gray-light;
-        padding: .5em 0;
+        outline: none;
+        border: $input-border-size solid $gray-light;
+        border-radius: $input-border-radius;
+        padding: $input-padding 0;
+        text-indent: $input-padding;
         transition: all $animation-duration ease;
         &:active, &:focus { border-color: $brand-default; }
         &:disabled {
@@ -23,20 +24,60 @@
     }
 }
 
-// Field Color Types
+// Hints & Validation
+.field .field-hint,
+.field .field-validation {
+    .material-icons {
+        font-size: ($input-label-size + .25em);
+        vertical-align: text-bottom;
+    }
+}
 
+.field .field-hint {
+    right: .25em;
+    .field-hint-msg {
+        transition: all $animation-duration ease;
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        right: 1.5em;
+        transform: scale(0);
+        white-space: nowrap;
+        background-color: $gray-lighter;
+        border-radius: $border-radius;
+        padding: 0 .5em;
+    }
+}
+
+.field-hint:hover .field-hint-msg {
+    opacity: 1;
+    transform: scale(1);
+}
+
+.field .field-validation{
+    position: absolute;
+    top: ($input-label-margin + 2.25);
+    right: .25em;
+    &.success { color: $brand-success; }
+    &.error { color: $brand-danger; }
+}
+
+.field-input:focus ~ .field-validation .material-icons {
+    transition: all $animation-duration ease;
+    opacity: 0.5;
+}
+
+// Field Color Types
 .field-primary { @include field-type($brand-primary); }
 .field-success { @include field-type($brand-success); }
 .field-info { @include field-type($brand-info); }
 .field-warning { @include field-type($brand-warning); }
 .field-danger { @include field-type($brand-danger); }
 
-// Sliding Labels
-
+// Label Highlights
 input:valid + .field-label,
 input:focus + .field-label,
 textarea:valid + .field-label,
 textarea:focus + .field-label {
     transition: $animation-duration all ease;
-    top: -1em;
 }

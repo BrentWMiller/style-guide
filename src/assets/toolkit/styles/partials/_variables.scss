@@ -62,12 +62,14 @@ $table-padding: 1em;
 $table-margin:  1em;
 
 // Form Defaults
-
 $form-padding: $container-padding;
 
-$input-label-margin: .65em;
-$input-label-size:   ($font-size - .075em);
-$input-border-size:  .15em;
+$input-padding:       $container-padding;
+$input-margin:        $container-margin;
+$input-label-margin:  (($input-margin + .75em) * -1);
+$input-label-size:    ($font-size - .075em);
+$input-border-size:   $border-size;
+$input-border-radius: $border-radius;
 
 // Animation
 $animation-duration: 0.25s;
