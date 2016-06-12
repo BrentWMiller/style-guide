@@ -12,6 +12,7 @@
         outline: none;
         border: $input-border-size solid $gray-light;
         border-radius: $input-border-radius;
+        background-color: $input-bg;
         padding: $input-padding 0;
         text-indent: $input-padding;
         transition: all $animation-duration ease;
@@ -43,10 +44,10 @@
         right: 1.5em;
         transform: scale(0);
         white-space: nowrap;
-        background-color: $gray-lighter;
-        border-radius: $border-radius;
+        color: $brand-default;
         padding: 0 .5em;
     }
+    &:hover { color: $brand-default; }
 }
 
 .field-hint:hover .field-hint-msg {
