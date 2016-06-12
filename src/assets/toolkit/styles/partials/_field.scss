@@ -81,6 +81,8 @@
 input:valid + .field-label,
 input:focus + .field-label,
 textarea:valid + .field-label,
-textarea:focus + .field-label {
+textarea:focus + .field-label,
+select:valid + .field-label,
+select:focus + .field-label {
     transition: $animation-duration all ease;
 }

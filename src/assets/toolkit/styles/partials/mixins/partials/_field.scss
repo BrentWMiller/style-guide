@@ -1,7 +1,8 @@
 @mixin field-type($color) {
     .field-input:active, .field-input:focus { border-color: $color; }
+    input:focus + .field-label,
     textarea:focus + .field-label,
-    input:focus + .field-label {
+    select:focus + .field-label {
         color: $color;
     }
 }
