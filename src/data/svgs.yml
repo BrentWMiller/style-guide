@@ -4,3 +4,9 @@ avatar:
     female: "http://image005.flaticon.com/1/svg/145/145862.svg"
     man: "http://image000.flaticon.com/icons/svg/145/145993.svg"
     man2: "http://image000.flaticon.com/icons/svg/145/145996.svg"
+graphs:
+    line: "0,120 20,60 40,80 60,20 80,90
+            100,50 120,80 140,55 160,60 180,45
+            200,95 220,23 240,50 260,80 280,65
+            300,95 320,90 340,50 360,80 380,65
+            400,95 420,90 440,50 460,80 480,35 500,0"

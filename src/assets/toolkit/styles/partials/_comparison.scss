@@ -1,19 +1,20 @@
 .comparison {
     padding: $container-padding;
     background-color: $content-bg;
-    text-align: center;
+    border: $border-size solid $gray-lighter;
+    border-radius: $border-radius;
     .comparison-item {
-        border: $border-size solid $gray-lighter;
-        border-radius: $border-radius;
+        padding: ($container-padding * 2);
     }
     .comparison-title {
-        padding-top: $container-padding;
-        font-weight: $medium;
         color: $gray;
     }
     .comparison-value {
-        padding-bottom: $container-padding;
         font-size: ($font-size * 1.5);
-        font-weight: $medium;
+        font-weight: $ultra-bold;
+    }
+    .comparison-graph {
+        background-color: transparentize($gray-lighter, .5);
+        stroke: $brand-primary;
     }
 }
