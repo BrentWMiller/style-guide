@@ -7,8 +7,6 @@
 
 	<title>{{title}}</title>
 
-	<link rel="stylesheet" href="../assets/fabricator/styles/f.css">
-    
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/4.1.1/normalize.min.css">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/flexboxgrid/6.3.0/flexboxgrid.min.css" type="text/css" >
 	<!-- toolkit styles -->
@@ -21,33 +19,35 @@
 </head>
 <body>
 
-	{{#if fabricator}}
-		{{> f-icons}}
-		{{> f-menu}}
-		<div class="f-container">
-			{{> f-control-bar}}
-	{{/if}}
-    
+<nav class="navbar navbar-transparent">
+    <ul class="navbar-nav">
+        <a class="navbar-brand" href="#">Navbar</a>
+        <li class="nav-item">
+            <a class="nav-link active" href="#">Home</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Features</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Pricing</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link" href="#">Support</a>
+        </li>
+    </ul>
+</nav>
+
+<section>
+    <div class="container">
         <div class="row">
-            <div class="col-sm-12 col-lg-6">
+            <div class="col-xs-12">
                 <div class="box">
-                    <h2>{{title}}</h2>
-                    <div>{{notes}}</div>
-                    <hr>
                     {% body %}
                 </div>
             </div>
         </div>
     </div>
-    
-	{{#if fabricator}}
-		</div>
-	<script src="assets/fabricator/scripts/f.js"></script>
-	{{/if}}
-
-	<!-- toolkit scripts -->
-	<script src="../assets/toolkit/scripts/toolkit.js"></script>
-	<!-- /toolkit scripts -->
+</section>
 
 </body>
 </html>

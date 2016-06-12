@@ -1,3 +1,15 @@
+// Section
+section {
+    position: relative;
+    top: 1em;
+}
+
+// Divider
+hr {
+    border-color: $brand-default;
+}
+
+// Background Colors
 .bg-default { background-color: $brand-default; }
 .bg-primary { background-color: $brand-primary; }
 .bg-success { background-color: $brand-success; }

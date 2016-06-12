@@ -3,9 +3,11 @@
     margin: ($input-margin + .75em) 0;
     .field-label, .field-hint {
         position: absolute;
-        font-size: $input-label-size;
+        font-size: ($input-label-size / 1.25);
         top: $input-label-margin;
         color: $gray;
+        text-transform: uppercase;
+        font-weight: $bold;
     }
     .field-input {
         width: 100%;

@@ -1,8 +1,9 @@
 .alert{
     color: $text-color-inverted;
     background-color: $brand-default;
-    padding: $container-padding;
+    padding: ($container-padding * 2);
     margin: $container-margin 0;
+    border-radius: $border-radius;
 }
 
 .alert .material-icons {

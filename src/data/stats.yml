@@ -1,0 +1,10 @@
+type:
+    clicks: "Total clicks"
+    views: "Total views"
+    code: "Lines of code"
+    users: "Number of users"
+value:
+    short: "2"
+    medium: "256"
+    long: "1,264"
+    longest: "16,603"

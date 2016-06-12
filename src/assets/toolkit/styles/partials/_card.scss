@@ -1,4 +1,4 @@
-.card.basic {
+.card {
     position: relative;
     border: $border-size solid $gray-lighter;
     border-radius: $border-radius;
@@ -6,7 +6,7 @@
     margin: ($container-margin / 2) 0;
     .card-media { padding: $container-padding; }
     .card-title, .card-subtitle, .card-body, .card-footer {
-        padding: $container-padding ($container-padding * 4);
+        padding: $container-padding ($container-padding * 2);
     }
     .card-subtitle {
         padding-top: 0;

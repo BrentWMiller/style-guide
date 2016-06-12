@@ -1,0 +1,42 @@
+.navbar {
+    padding: ($container-padding * 2) $container-padding;
+    background-color: $brand-primary;
+}
+
+.navbar-nav {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.navbar-brand {
+    color: $text-color-inverted;
+    font-weight: $medium;
+    text-decoration: none;
+    padding: $container-padding;
+    padding-right: ($container-padding * 4);
+}
+
+.nav-item {
+    display: inline;
+    a {
+        transition: $animation-duration;
+        padding: ($container-padding * 2);
+        margin: 0;
+        color: $text-color-inverted;
+        text-decoration: none;
+        &:hover { background-color: transparentize($content-bg, 0.85); }
+    }
+}
+
+.navbar.navbar-transparent {
+    background-color: transparentize($brand-primary, 0.95);
+    .navbar-brand {
+        color: $brand-primary;
+        font-weight: $medium;
+    }
+    .nav-item a {
+        color: $brand-primary;
+        &:hover { background-color: transparentize($brand-primary, 0.85); }
+    }
+}

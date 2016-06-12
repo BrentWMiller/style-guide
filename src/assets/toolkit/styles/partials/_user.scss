@@ -1,0 +1,21 @@
+.user-block {
+    margin: ($container-margin / 2) 0;
+    padding: $container-padding;
+    max-height: 5em;
+    background-color: $content-bg;
+    .user-name, .user-stat { @extend .overflow-ellipsis; }
+    .user-name {
+        font-size: ($font-size * 1.5);
+    }
+    .user-stat { color: $gray; }
+}
+
+.user-icon img {
+    max-height: 5em;
+    max-width: 5em;
+}
+
+.user-block, .user-icon {
+    border: $border-size solid $gray-lighter;
+    border-radius: $border-radius;
+}

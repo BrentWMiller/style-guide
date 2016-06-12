@@ -5,7 +5,7 @@
     border: $button-border-size solid $gray-lighter;
     outline: none;
     transition: all $animation-duration ease;
-    margin: $button-margin;
+    margin: $button-margin 0;
     &:hover, &:focus { border-color: $brand-default; }
     &:active { @include drop-shadow($level: 2); }
     

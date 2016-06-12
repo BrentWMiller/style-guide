@@ -1,31 +1,37 @@
 <div class="field">
-    <input class="field-input" type="text" id="textInput" required />
+    <input class="field-input" type="text" id="textInput" />
     <label class="field-label" for="textInput">Text input default</label>
 </div>
 
 <div class="field field-primary">
-    <input class="field-input" type="text" id="textInput" required />
+    <div class="field-hint">
+        <i class="material-icons">info_outline</i>
+        <div class="field-hint-msg">This is the hint for hovering on the hint icon</div>
+    </div>
+    <input class="field-input" type="text" id="textInput" />
     <label class="field-label" for="textInput">Text input primary</label>
 </div>
 
-<div class="field field-success">
-    <input class="field-input" type="text" id="textInput" required />
+<div class="field field-success has-validation">
+    <input class="field-input" type="text" id="textInput" />
     <label class="field-label" for="textInput">Text input success</label>
+    <span class="field-validation success"><i class="material-icons">check</i></span>
 </div>
 
 <div class="field field-info">
-    <input class="field-input" type="text" id="textInput" required />
+    <input class="field-input" type="text" id="textInput" />
     <label class="field-label" for="textInput">Text input info</label>
 </div>
 
 <div class="field field-warning">
-    <input class="field-input" type="text" id="textInput" required />
+    <input class="field-input" type="text" id="textInput" />
     <label class="field-label" for="textInput">Text input warning</label>
 </div>
 
 <div class="field field-danger">
-    <input class="field-input" type="text" id="textInput" required />
+    <input class="field-input" type="text" id="textInput" />
     <label class="field-label" for="textInput">Text input danger</label>
+    <span class="field-validation error"><i class="material-icons">error</i></span>
 </div>
 
 <div class="field">

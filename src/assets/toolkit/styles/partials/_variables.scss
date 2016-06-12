@@ -9,10 +9,10 @@ $gray-dark:     mix($gray, $mix-black, 30%);
 $gray-darker:   mix($gray, $mix-black, 15%);
 
 // Brand Colors
-$brand-default:   #121f33;
+$brand-default:   #141414;
 $brand-primary:   #5689ee;
 $brand-success:   #30bb98;
-$brand-info:      #4451aa;
+$brand-info:      #6f3ccd;
 $brand-warning:   #f2db77;
 $brand-danger:    #e85b5b;
 
@@ -49,7 +49,7 @@ $icon-size: ($font-size + .25em);
 $icon-top-margin: .05em;
 
 // Button Defaults
-$button-bg: #fff;
+$button-bg: $content-bg;
 
 $button-height:         .5em;
 $button-width:          1em;
@@ -64,7 +64,7 @@ $table-margin:  1em;
 // Form Defaults
 $form-padding: $container-padding;
 
-$input-bg:          #fff;
+$input-bg:            $content-bg;
 $input-padding:       $container-padding;
 $input-margin:        $container-margin;
 $input-label-margin:  (($input-margin + .75em) * -1);

@@ -1,0 +1,70 @@
+//Floats
+.clearfix { @include clearfix(); }
+.pull-right { float: right !important; }
+.pull-left { float: left !important; }
+
+// No Padding & No Margins
+.no-padding { padding: 0; }
+
+.no-padding-t { padding-top: 0; }
+.no-padding-b { padding-bottom: 0; }
+.no-padding-tb {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.no-padding-r { padding-right: 0; }
+.no-padding-l { padding-left: 0; }
+.no-padding-lr {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+.no-margin { margin: 0; }
+
+.no-margin-t { margin-top: 0; }
+.no-margin-b { margin-bottom: 0; }
+.no-margin-tb {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.no-margin-r { margin-right: 0; }
+.no-margin-l { margin-left: 0; }
+.no-margin-lr {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+// Add Padding & Margins
+.add-padding { padding: 1.5em; }
+
+.add-padding-t { padding-top: 1.5em; }
+.add-padding-b { padding-bottom: 1.5em; }
+.add-padding-tb {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.add-padding-r { padding-right: 1.5em; }
+.add-padding-l { padding-left: 1.5em; }
+.add-padding-lr {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}
+
+.add-margin { margin: 1.5em; }
+
+.add-margin-t { margin-top: 1.5em; }
+.add-margin-b { margin-bottom: 1.5em; }
+.add-margin-tb {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.add-margin-r { margin-right: 1.5em; }
+.add-margin-l { margin-left: 1.5em; }
+.add-margin-lr {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}
