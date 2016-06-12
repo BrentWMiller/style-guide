@@ -8,3 +8,5 @@ value:
     medium: "256"
     long: "1,264"
     longest: "16,603"
+    longest2: "36,334.00"
+    longest3: "64,435.23"

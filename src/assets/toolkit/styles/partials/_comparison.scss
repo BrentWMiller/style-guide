@@ -1,0 +1,19 @@
+.comparison {
+    padding: $container-padding;
+    background-color: $content-bg;
+    text-align: center;
+    .comparison-item {
+        border: $border-size solid $gray-lighter;
+        border-radius: $border-radius;
+    }
+    .comparison-title {
+        padding-top: $container-padding;
+        font-weight: $medium;
+        color: $gray;
+    }
+    .comparison-value {
+        padding-bottom: $container-padding;
+        font-size: ($font-size * 1.5);
+        font-weight: $medium;
+    }
+}
