@@ -25,6 +25,11 @@
             border-color: $gray-lighter;
         }
     }
+    input:focus + .field-label,
+    textarea:focus + .field-label,
+    select:focus + .field-label {
+        color: $brand-default;
+    }
 }
 
 // Hints & Validation
