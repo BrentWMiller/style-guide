@@ -1,6 +1,7 @@
 @import "partials/variables";
 @import "partials/mixins/mixins";
-@import "partials/animations/animations.scss";
+@import "partials/animations/animations";
+@import "partials/utility/utility";
 
 @import "partials/alerts";
 @import "partials/button";
@@ -21,4 +22,3 @@
 @import "partials/table";
 @import "partials/typography";
 @import "partials/user";
-@import "partials/utilities";

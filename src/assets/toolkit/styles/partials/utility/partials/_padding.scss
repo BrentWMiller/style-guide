@@ -1,0 +1,33 @@
+// Remove padding
+.no-padding { padding: 0; }
+
+.no-padding-t { padding-top: 0; }
+.no-padding-b { padding-bottom: 0; }
+.no-padding-tb {
+    padding-top: 0;
+    padding-bottom: 0;
+}
+
+.no-padding-r { padding-right: 0; }
+.no-padding-l { padding-left: 0; }
+.no-padding-lr {
+    padding-right: 0;
+    padding-left: 0;
+}
+
+// Add padding
+.add-padding { padding: 1.5em; }
+
+.add-padding-t { padding-top: 1.5em; }
+.add-padding-b { padding-bottom: 1.5em; }
+.add-padding-tb {
+    padding-top: 1.5em;
+    padding-bottom: 1.5em;
+}
+
+.add-padding-r { padding-right: 1.5em; }
+.add-padding-l { padding-left: 1.5em; }
+.add-padding-lr {
+    padding-right: 1.5em;
+    padding-left: 1.5em;
+}

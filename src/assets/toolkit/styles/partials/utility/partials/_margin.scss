@@ -1,0 +1,33 @@
+// Remove margins
+.no-margin { margin: 0; }
+
+.no-margin-t { margin-top: 0; }
+.no-margin-b { margin-bottom: 0; }
+.no-margin-tb {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.no-margin-r { margin-right: 0; }
+.no-margin-l { margin-left: 0; }
+.no-margin-lr {
+    margin-right: 0;
+    margin-left: 0;
+}
+
+// Add margins
+.add-margin { margin: 1.5em; }
+
+.add-margin-t { margin-top: 1.5em; }
+.add-margin-b { margin-bottom: 1.5em; }
+.add-margin-tb {
+    margin-top: 1.5em;
+    margin-bottom: 1.5em;
+}
+
+.add-margin-r { margin-right: 1.5em; }
+.add-margin-l { margin-left: 1.5em; }
+.add-margin-lr {
+    margin-right: 1.5em;
+    margin-left: 1.5em;
+}

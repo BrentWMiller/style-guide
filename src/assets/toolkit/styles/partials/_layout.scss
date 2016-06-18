@@ -4,10 +4,13 @@ section {
     top: 1em;
 }
 
-// Divider
-hr {
-    border-color: $brand-default;
+// Article
+article {
+      max-width: 48em;
 }
+
+// Divider
+hr { border-color: $brand-default; }
 
 // Background Colors
 .bg-default { background-color: $brand-default; }

@@ -3,10 +3,10 @@ $mix-white: #fff;
 $mix-black: #000;
 
 $gray: #9E9E9E;
-$gray-lighter:  mix($gray, $mix-white, 15%);
-$gray-light:    mix($gray, $mix-white, 30%);
-$gray-dark:     mix($gray, $mix-black, 30%);
-$gray-darker:   mix($gray, $mix-black, 15%);
+$gray-lighter:  mix($gray, $mix-white, 15%); // #f0f0f0
+$gray-light:    mix($gray, $mix-white, 30%); // #e2e2e2
+$gray-dark:     mix($gray, $mix-black, 30%); // #2f2f2f
+$gray-darker:   mix($gray, $mix-black, 15%); // #181818
 
 // Brand Colors
 $brand-default:   #141414;
@@ -21,7 +21,7 @@ $content-bg:           #ffffff;
 $content-bg-secondary: #f8f8f8;
 
 $text-color:           #161616;
-$text-color-secondary: #585757;
+$text-color-secondary: #575757;
 $text-color-inverted:    #fff;
 
 // Typography
@@ -74,3 +74,6 @@ $input-border-radius: $border-radius;
 
 // Animation
 $animation-duration: 0.25s;
+
+// Grid
+

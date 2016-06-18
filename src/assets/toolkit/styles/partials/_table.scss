@@ -7,6 +7,7 @@
         text-align: left;
     }
     tbody { border: $border-size solid $gray-lighter; }
+    tbody tr { border: $border-size solid $gray-lighter; }
     thead th, tfoot th {
         padding: $table-padding;
         color: $gray-light;

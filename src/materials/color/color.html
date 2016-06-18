@@ -1,0 +1,22 @@
+---
+fabricator: true
+---
+
+<h2>Color</h2>
+
+<div class="row">
+	<div class="col-xs-12">
+		<div class="box">
+			{{#each toolkit.colors}}
+				<div class="f-color-chips">
+				{{#each this}}
+					<div class="f-color-chip">
+						<div class="f-color-chip__name">{{@key}}</div>
+						<div class="f-color-chip__color">{{this}}</div>
+					</div>
+				{{/each}}
+				</div>
+			{{/each}}
+		</div>
+	</div>
+</div>

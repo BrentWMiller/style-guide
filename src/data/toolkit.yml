@@ -1,8 +1,15 @@
 colors:
   brand:
-    Default: "#121f33"
+    Default: "#141414"
     Primary: "#5689ee"
     Success: "#30bb98"
-    Info: "#4451aa"
+    Info: "#6f3ccd"
     Warning: "#f2db77"
     Danger: "#e85b5b"
+  grayscale:
+    Gray Lighter: "#f0f0f0"
+    Gray Light: "#e2e2e2"
+    Gray: "#9e9e9e"
+    Gray Dark: "#2f2f2f"
+    Gray Darker: "#181818"
+
