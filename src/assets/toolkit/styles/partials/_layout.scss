@@ -11,6 +11,15 @@ article {
 
 // Divider
 hr { border-color: $brand-default; }
+.divider, .divider-dotted {
+    margin: $container-margin 0;
+    width: 100%;
+    height: $border-size;
+    border-top: $border-size solid $gray-light;
+}
+.divider-dotted {
+    border-top: $border-size dotted $gray-light;
+}
 
 // Background Colors
 .bg-default { background-color: $brand-default; }
