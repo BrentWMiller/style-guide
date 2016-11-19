@@ -2,7 +2,7 @@
 .barchart {
     position: relative;
     background-color: $gray-lighter;
-    margin: ($container-margin * 2) 0;
+    margin: ($container-margin * 2) 0 $container-margin 0;
 }
 
 .barchart-bar:before {

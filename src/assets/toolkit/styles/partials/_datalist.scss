@@ -7,13 +7,13 @@
 }
 
 .datalist {
-    margin: 0;
+    margin: ($container-margin / 2) 0;
     padding: 0;
     border: $border-size solid $gray-lighter;
     border-radius: $border-radius;
     &:last-child { margin-bottom: 0; }
     .datalist-item {
-        padding: ($container-padding + .5em) $container-padding;
+        padding: ($container-padding + .5em);
         list-style-type: none;
         border-bottom: $border-size solid $gray-lighter;
         &:last-child {
